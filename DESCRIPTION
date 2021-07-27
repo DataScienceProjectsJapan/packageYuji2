@@ -1,11 +1,11 @@
 Package: packageYuji2
-Title: What the Package Does (One Line, Title Case)
+Title: Exercise for R learner
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Yuji",
+           family = "Yamaguchi",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "yuji_ruzyu@icloud.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
