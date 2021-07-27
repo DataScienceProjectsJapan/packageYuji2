@@ -1,0 +1,67 @@
+---
+title: "Execise for section 5.4.2"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+#remotes::install_github("rstudio-education/gradethis")
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+tutorial_options(exercise.checker = gradethis::grade_learnr)
+library(tidyverse)
+library(nycflights13)
+library(gradethis)
+```
+
+## Easy
+### Exercise 1
+
+In this execise, we are going to use filter(). run the code to get the information of that. 
+
+```{r 1, exercise=TRUE, exercise.eval=TRUE}
+
+```
+```{r 1-hint-1}
+"Use ? "
+```
+```{r 1-solution}
+?filter()
+```
+```{r 1-check}
+gradethis::grade_code()
+```
+
+
+## Intermediate
+### Exercise 2
+
+Find all flights that depart from LGA and EWR
+```{r 3, exercise=TRUE, exercise.eval=TRUE}
+
+```
+```{r 3-hint-1}
+"Use filter and |(or)"
+```
+```{r 3-solution}
+filter(flights, dest == 'LGA' | dest == 'EWR')
+```
+```{r 3-check}
+gradethis::grade_code()
+```
+## Advance
+### Exercise 3
+
+Find same flights that code below represents using !()
+```{r 5, exercise=TRUE, exercise.eval=TRUE}
+filter(flights, arr_delay > 60, dep_delay > 60)
+```
+```{r 5-hint-1}
+"!() means out of the specified range"
+```
+```{r 5-solution}
+filter(flights, !(arr_delay <= 60 | dep_delay <= 60))
+```
+```{r 5-check}
+gradethis::grade_code()
+```
